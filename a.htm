@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sık Kullanılanlar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    select {
+      flex: 1 1 200px;
+      max-width: 250px;
+      padding: 5px;
+      font-size: 16px;
+    }
+    .icon-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .icon-links a img {
+      max-width: 70px;
+      height: auto;
+      display: block;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dropdown Menüler -->
+  <div class="menu-container">
+    <select onchange="if(this.value) window.open(this.value,'_blank'); this.selectedIndex=0;">
+      <option>HABER SİTELERİ</option>
+      <option value="http://www.Mynet.com">Mynet</option>
+      <option value="http://www.Milliyet.com.tr">Milliyet</option>
+      <option value="http://www.hurriyet.com.tr">Hürriyet</option>
+      <option value="http://www.sabah.com.tr/">Sabah</option>
+      <option value="http://www.haberturk.com/">Habertürk</option>
+      <option value="http://www.dha.com.tr/">Doğan Haber Ajansı</option>
+      <option value="http://www.iha.com.tr/">İhlas Haber Ajansı</option>
+      <option value="http://www.aa.com.tr/">Anadolu Ajansı</option>
+      <option value="http://www.cihan.com.tr/">Cihan Haber Ajansı</option>
+      <option value="http://www.yazete.com/">Yazete</option>
+      <option value="http://www.haberler.com/">Haberler</option>
+      <option value="http://www.haber7.com/">Haber7</option>
+      <option value="http://www.habervitrini.com/">Haber Vitrini</option>
+      <option value="http://www.ensonhaber.com/">EnSon Haber</option>
+      <option value="http://www.internethaber.com/">İnternet Haber</option>
+    </select>
+
+    <select onchange="if(this.value) window.open(this.value,'_blank'); this.selectedIndex=0;">
+      <option>ÇANKIRI SİTELERİ</option>
+      <option value="http://www.haber18.com">Haber 18</option>
+      <option value="http://www.haberci18.com">Haberci 18</option>
+      <option value="http://www.cankiribulteni.com/">Çankırı Bülteni</option>
+      <option value="http://www.cankirihabersitesi.com/">Çankırı Haber Sitesi</option>
+      <option value="http://bizimcankiri.com.tr/">Bizim Çankırı</option>
+      <option value="http://www.ekspres18.com/">Ekspres 18</option>
+      <option value="http://www.cankiriyenigun.com/">Çankırı Yenigün</option>
+      <option value="http://www.dogruyolgazetesi.com/">Doğruyol Gazetesi</option>
+      <option value="http://www.karatekin.com.tr/">Karatekin Gazetesi</option>
+      <option value="http://www.cankiripostasi.com/">Çankırı Postası</option>
+      <option value="http://www.posta18.com">Posta 18</option>
+      <option value="http://www.cankiri.tv/">Çankırı TV</option>
+      <option value="http://medyacankiri.com/">Medya Çankırı</option>
+      <option value="http://www.cankiriningundemi.com/">Çankırının Gündemi</option>
+      <option value="http://www.sozcu18.com">Sözcü 18</option>
+    </select>
+
+    <select onchange="if(this.value) window.open(this.value,'_blank'); this.selectedIndex=0;">
+      <option>ALIŞVERİŞ SİTELERİ</option>
+      <option value="http://www.a101.com.tr/">A101</option>
+      <option value="http://www.bim.com.tr/">BİM</option>
+      <option value="http://www.sok.com.tr/">Şok</option>
+      <option value="http://www.bimeks.com.tr/">Bimeks</option>
+      <option value="http://www.hepsiburada.com/">Hepsi Burada</option>
+      <option value="http://www.Bitenekadar.com">Bitenekadar</option>
+      <option value="http://www.teknosa.com/">Teknosa</option>
+      <option value="http://www.mediamarkt.com.tr/">Media Markt</option>
+      <option value="http://www.hizlial.com/">Hızlıal</option>
+      <option value="http://www.gittigidiyor.com/">Gitti Gidiyor</option>
+      <option value="http://www.sanalpazar.com/">Sanal Pazar</option>
+      <option value="http://www.cimri.com/">Cimri</option>
+      <option value="http://www.migroskop.com.tr/">Migros</option>
+      <option value="https://www.moneyclubkart.com/">Money Clup Kart</option>
+      <option value="http://www.tozlu.com/tr/">Tozlu</option>
+      <option value="http://www.morhipo.com/">Morhipo</option>
+      <option value="https://www.markafoni.com/">Markafoni</option>
+      <option value="http://www.kidycity.com/tr-TR/">KidyCity</option>
+      <option value="http://www.trendyol.com/">Trendyol</option>
+      <option value="http://www.lcwaikiki.com/">LCWaikiki</option>
+      <option value="https://www.tekzen.com.tr/">Tekzen</option>
+      <option value="http://www.evmanya.com/">Evmanya</option>
+    </select>
+
+    <select onchange="if(this.value) window.open(this.value,'_blank'); this.selectedIndex=0;">
+      <option>BANKALAR</option>
+      <option value="http://www.denizbank.com/">Denizbank</option>
+      <option value="http://www.finansbank.com.tr/">Finansbank</option>
+      <option value="http://www.isbank.com.tr/">İş Bankası</option>
+      <option value="https://www.vakifbank.com.tr/">Vakıfbank</option>
+      <option value="https://www.ziraatbank.com.tr/">Ziraat Bankası</option>
+      <option value="https://www.halkbank.com.tr/">Halk Bankası</option>
+    </select>
+
+    <select onchange="if(this.value) window.open(this.value,'_blank'); this.selectedIndex=0;">
+      <option>DİĞER SİTELER</option>
+      <option value="https://www.bobiler.org/">Bobiler</option>
+      <option value="http://www.ecanlitvizle.com/">Canlı Tv Seyret</option>
+      <option value="http://www.koeri.boun.edu.tr/scripts/lst2.asp">Son Depremler</option>
+      <option value="http://www.sahibinden.com/">Sahibinden</option>
+      <option value="http://hiztesti.ttnet.com.tr/">TTNET Hız Testi</option>
+      <option value="http://www.chip.com.tr/">Chip</option>
+      <option value="https://ett.turktelekom.com.tr/etmh/">Türk Telekom Online İşlemler</option>
+      <option value="http://www.aol.meb.gov.tr/">Açık Öğretim Lisesi</option>
+      <option value="http://aofburo.anadolu.edu.tr/">Açık Öğretim Fakültesi</option>
+      <option value="http://www.Memurlar.net">Memurlar.net</option>
+    </select>
+  </div>
+
+  <!-- Resimli Linkler -->
+  <div class="icon-links">
+    <a href="http://www.google.com.tr/" target="_blank"><img src="img/google.jpg" alt="Google"></a>
+    <a href="http://translate.google.com.tr/" target="_blank"><img src="img/ceviri.jpg" alt="Google Translate"></a>
+    <a href="http://hotmail.com/" target="_blank"><img src="img/hotmail.jpg" alt="Hotmail"></a>
+    <a href="http://tr-tr.facebook.com/" target="_blank"><img src="img/facebook.jpg" alt="Facebook"></a>
+    <a href="http://gmail.com/" target="_blank"><img src="img/gmail.jpg" alt="Gmail"></a>
+    <a href="http://ttnet.com.tr/" target="_blank"><img src="img/ttnet.jpg" alt="TTNET"></a>
+    <a href="http://www.osym.gov.tr/" target="_blank"><img src="img/osym.jpg" alt="ÖSYM"></a>
+    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.jpg" alt="Twitter"></a>
+    <a href="http://www.vodafone.com.tr/" target="_blank"><img src="img/vodafone.jpg" alt="Vodafone"></a>
+    <a href="http://avea.com.tr/" target="_blank"><img src="img/avea.jpg" alt="Avea"></a>
+    <a href="http://turkcell.com.tr/" target="_blank"><img src="img/turkcell.jpg" alt="Turkcell"></a>
+    <a href="http://www.izlesene.com/" target="_blank"><img src="img/izlesene.jpg" alt="İzlesene"></a>
+    <a href="http://youtube.com/" target="_blank"><img src="img/youtube.jpg" alt="YouTube"></a>
+  </div>
+
+</body>
+</html>
