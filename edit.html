@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Link Düzenleyici</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; padding: 20px; }
+    h1 { text-align: center; }
+    .section { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+    .category, .icon-item { border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 6px; }
+    button { margin-left: 5px; }
+    input, select { padding: 5px; margin-right: 5px; }
+    .file-drop { padding: 20px; border: 2px dashed #aaa; text-align: center; margin-bottom: 20px; background: #fff; border-radius: 8px; }
+    .file-drop.dragover { background: #e0ffe0; }
+</style>
+</head>
+<body>
+
+<h1>Link Düzenleyici</h1>
+
+<div class="file-drop" id="fileDrop">
+    Buraya links.json dosyasını sürükleyip bırakın veya 
+    <input type="file" id="fileInput" accept=".json">
+</div>
+
+<div class="section">
+    <h2>Kategoriler</h2>
+    <div id="categories"></div>
+    <h3>Yeni Kategori Ekle</h3>
+    <input type="text" id="newCategoryName" placeholder="Kategori adı">
+    <button onclick="addCategory()">Ekle</button>
+</div>
+
+<div class="section">
+    <h2>Ortadaki İkonlar</h2>
+    <div id="centerIcons"></div>
+    <h3>Yeni İkon Ekle</h3>
+    <input type="text" id="iconTitle" placeholder="Başlık">
+    <input type="text" id="iconUrl" placeholder="URL">
+    <select id="iconImage"></select>
+    <button onclick="addCenterIcon()">Ekle</button>
+</div>
+
+<div class="section" style="text-align:center;">
+    <button onclick="downloadJSON()">Değişiklikleri JSON olarak indir</button>
+</div>
+
+<script>
+let data = { categories: [], centerIcons: [] };
+
+// IMG klasöründen ikonları yükleme
+async function loadIcons() {
+    // GitHub Pages'ta klasör tarama yok, elle liste eklenebilir
+    const icons = ["google.jpg", "gmail.jpg", "facebook.jpg", "twitter.jpg"];
+    const select = document.getElementById("iconImage");
+    icons.forEach(icon => {
+        const opt = document.createElement("option");
+        opt.value = icon;
+        opt.textContent = icon;
+        select.appendChild(opt);
+    });
+}
+
+function renderCategories() {
+    const container = document.getElementById("categories");
+    container.innerHTML = "";
+    data.categories.forEach((cat, i) => {
+        const div = document.createElement("div");
+        div.className = "category";
+        div.innerHTML = `<strong>${cat.name}</strong> 
+            <button onclick="deleteCategory(${i})">Sil</button>
+            <div>${cat.links.map((l, idx) => 
+                `${l.title} (${l.url}) <button onclick="deleteLink(${i},${idx})">Sil</button>`
+            ).join("<br>")}</div>
+            <input type="text" id="linkTitle${i}" placeholder="Başlık">
+            <input type="text" id="linkUrl${i}" placeholder="URL">
+            <button onclick="addLink(${i})">Link Ekle</button>`;
+        container.appendChild(div);
+    });
+}
+
+function renderCenterIcons() {
+    const container = document.getElementById("centerIcons");
+    container.innerHTML = "";
+    data.centerIcons.forEach((icon, i) => {
+        const div = document.createElement("div");
+        div.className = "icon-item";
+        div.innerHTML = `<img src="img/${icon.icon}" width="40"> 
+            ${icon.title} (${icon.url})
+            <button onclick="deleteCenterIcon(${i})">Sil</button>`;
+        container.appendChild(div);
+    });
+}
+
+function addCategory() {
+    const name = document.getElementById("newCategoryName").value.trim();
+    if (!name) return;
+    data.categories.push({ name, links: [] });
+    document.getElementById("newCategoryName").value = "";
+    renderCategories();
+}
+
+function deleteCategory(index) {
+    data.categories.splice(index, 1);
+    renderCategories();
+}
+
+function addLink(catIndex) {
+    const title = document.getElementById(`linkTitle${catIndex}`).value.trim();
+    const url = document.getElementById(`linkUrl${catIndex}`).value.trim();
+    if (!title || !url) return;
+    data.categories[catIndex].links.push({ title, url });
+    document.getElementById(`linkTitle${catIndex}`).value = "";
+    document.getElementById(`linkUrl${catIndex}`).value = "";
+    renderCategories();
+}
+
+function deleteLink(catIndex, linkIndex) {
+    data.categories[catIndex].links.splice(linkIndex, 1);
+    renderCategories();
+}
+
+function addCenterIcon() {
+    const title = document.getElementById("iconTitle").value.trim();
+    const url = document.getElementById("iconUrl").value.trim();
+    const icon = document.getElementById("iconImage").value;
+    if (!title || !url || !icon) return;
+    data.centerIcons.push({ title, url, icon });
+    document.getElementById("iconTitle").value = "";
+    document.getElementById("iconUrl").value = "";
+    renderCenterIcons();
+}
+
+function deleteCenterIcon(index) {
+    data.centerIcons.splice(index, 1);
+    renderCenterIcons();
+}
+
+function downloadJSON() {
+    const blob = new Blob([JSON.stringify(data, null, 2)], {type: "application/json"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "links.json";
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+document.getElementById("fileInput").addEventListener("change", e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+        data = JSON.parse(e.target.result);
+        renderCategories();
+        renderCenterIcons();
+    };
+    reader.readAsText(file);
+});
+
+const fileDrop = document.getElementById("fileDrop");
+fileDrop.addEventListener("dragover", e => { e.preventDefault(); fileDrop.classList.add("dragover"); });
+fileDrop.addEventListener("dragleave", e => { fileDrop.classList.remove("dragover"); });
+fileDrop.addEventListener("drop", e => {
+    e.preventDefault();
+    fileDrop.classList.remove("dragover");
+    const file = e.dataTransfer.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+        data = JSON.parse(e.target.result);
+        renderCategories();
+        renderCenterIcons();
+    };
+    reader.readAsText(file);
+});
+
+loadIcons();
+</script>
+</body>
+</html>
