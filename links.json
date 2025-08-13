@@ -11,60 +11,39 @@
         { "name": "Doğan Haber Ajansı", "url": "http://www.dha.com.tr" },
         { "name": "İhlas Haber Ajansı", "url": "http://www.iha.com.tr" },
         { "name": "Anadolu Ajansı", "url": "http://www.aa.com.tr" },
-        { "name": "Cihan Haber Ajansı", "url": "http://www.cihan.com.tr" },
-        { "name": "Yazete", "url": "http://www.yazete.com" },
-        { "name": "Haberler", "url": "http://www.haberler.com" },
-        { "name": "Haber7", "url": "http://www.haber7.com" },
-        { "name": "Haber Vitrini", "url": "http://www.habervitrini.com" },
-        { "name": "EnSon Haber", "url": "http://www.ensonhaber.com" },
-        { "name": "İnternet Haber", "url": "http://www.internethaber.com" }
-      ]
+              ]
     },
     {
       "category": "ÇANKIRI SİTELERİ",
       "links": [
         { "name": "Haber 18", "url": "http://www.haber18.com" },
         { "name": "Haberci 18", "url": "http://www.haberci18.com" },
-        { "name": "Çankırı Bülteni", "url": "http://www.cankiribulteni.com" },
-        { "name": "Çankırı Haber Sitesi", "url": "http://www.cankirihabersitesi.com" },
         { "name": "Bizim Çankırı", "url": "http://bizimcankiri.com.tr" },
-        { "name": "Ekspres 18", "url": "http://www.ekspres18.com" },
-        { "name": "Çankırı Yenigün", "url": "http://www.cankiriyenigun.com" },
-        { "name": "Doğruyol Gazetesi", "url": "http://www.dogruyolgazetesi.com" },
         { "name": "Karatekin Gazetesi", "url": "http://www.karatekin.com.tr" },
         { "name": "Çankırı Postası", "url": "http://www.cankiripostasi.com" },
-        { "name": "Posta 18", "url": "http://www.posta18.com" },
-        { "name": "Çankırı TV", "url": "http://www.cankiri.tv" },
         { "name": "Medya Çankırı", "url": "http://medyacankiri.com" },
-        { "name": "Çankırının Gündemi", "url": "http://www.cankiriningundemi.com" },
+        { "name": "Manşet 18", "url": "https://www.manset18.com" },
+        { "name": "Bizim Çankırı", "url": "https://bizimcankiri.com.tr/" },
+        { "name": "Olay 18", "url": "https://www.olay18.com/" },
         { "name": "Sözcü 18", "url": "http://www.sozcu18.com" }
       ]
     },
     {
       "category": "ALIŞ VERİŞ SİTELERİ",
       "links": [
+        { "name": "Cimri", "url": "http://www.cimri.com/" },
+         { "name": "Akakçe", "url": "https://www.akakce.com/" },
+         { "name": "Tarım Kredi", "url": "https://www.tkkoop.com.tr/" },
         { "name": "A101", "url": "http://www.a101.com.tr/" },
         { "name": "BİM", "url": "http://www.bim.com.tr/" },
         { "name": "Şok", "url": "http://www.sok.com.tr/" },
-        { "name": "Bimeks", "url": "http://www.bimeks.com.tr/" },
         { "name": "Hepsi Burada", "url": "http://www.hepsiburada.com/" },
-        { "name": "Bitenekadar", "url": "http://www.bitenekadar.com" },
         { "name": "Teknosa", "url": "http://www.teknosa.com/" },
         { "name": "Media Markt", "url": "http://www.mediamarkt.com.tr/" },
-        { "name": "Hızlıal", "url": "http://www.hizlial.com/" },
         { "name": "Gitti Gidiyor", "url": "http://www.gittigidiyor.com/" },
-        { "name": "Sanal Pazar", "url": "http://www.sanalpazar.com/" },
-        { "name": "Cimri", "url": "http://www.cimri.com/" },
         { "name": "Migros", "url": "http://www.migroskop.com.tr/" },
         { "name": "Money Club Kart", "url": "https://www.moneyclubkart.com/" },
-        { "name": "Tozlu", "url": "http://www.tozlu.com/tr/" },
-        { "name": "Morhipo", "url": "http://www.morhipo.com/" },
-        { "name": "Markafoni", "url": "https://www.markafoni.com/" },
-        { "name": "KidyCity", "url": "http://www.kidycity.com/tr-TR/" },
-        { "name": "Trendyol", "url": "http://www.trendyol.com/" },
-        { "name": "LCWaikiki", "url": "http://www.lcwaikiki.com/" },
-        { "name": "Tekzen", "url": "https://www.tekzen.com.tr/" },
-        { "name": "Evmanya", "url": "http://www.evmanya.com/" }
+        
       ]
     },
     {
@@ -81,15 +60,12 @@
     {
       "category": "DİĞER SİTELER",
       "links": [
-        { "name": "Bobiler", "url": "https://www.bobiler.org/" },
-        { "name": "Canlı Tv Seyret", "url": "http://www.ecanlitvizle.com/" },
         { "name": "Son Depremler", "url": "http://www.koeri.boun.edu.tr/scripts/lst2.asp" },
         { "name": "Sahibinden", "url": "http://www.sahibinden.com/" },
         { "name": "TTNET Hız Testi", "url": "http://hiztesti.ttnet.com.tr/" },
+        { "name": "Speed Test", "url": "https://www.speedtest.net/" },
         { "name": "Chip", "url": "http://www.chip.com.tr/" },
         { "name": "Türk Telekom Online İşlemler", "url": "https://ett.turktelekom.com.tr/etmh/" },
-        { "name": "Açık Öğretim Lisesi", "url": "http://www.aol.meb.gov.tr/" },
-        { "name": "Açık Öğretim Fakültesi", "url": "http://aofburo.anadolu.edu.tr/" },
         { "name": "Memurlar.net", "url": "http://www.memurlar.net" }
       ]
     }
@@ -113,6 +89,7 @@
     { "name": "e-Devlet", "url": "https://www.turkiye.gov.tr/", "icon": "img/edevlet.jpg" },
     { "name": "EBA", "url": "https://www.eba.gov.tr/", "icon": "img/eba.jpg" },
     { "name": "e-Nabız", "url": "https://enabiz.gov.tr/", "icon": "img/enabiz.jpg" },
+    { "name": "Netflix", "url": "https://www.netflix.com/", "icon": "img/netflix.jpg" },
     { "name": "MHRS", "url": "https://mhrs.gov.tr/vatandas", "icon": "img/mhrs.jpg" }
   ]
 }
