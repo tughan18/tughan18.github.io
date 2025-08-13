@@ -93,14 +93,7 @@
         { "name": "Memurlar.net", "url": "http://www.Memurlar.net" }
       ]
     }
-  ],
- "categories": [
-    { "category": "HABER SİTELERİ", "links": [ /* ... */ ] },
-    { "category": "ÇANKIRI SİTELERİ", "links": [ /* ... */ ] },
-    { "category": "ALIŞ VERİŞ SİTELERİ", "links": [ /* ... */ ] },
-    { "category": "BANKALAR", "links": [ /* ... */ ] },
-    { "category": "DİĞER SİTELER", "links": [ /* ... */ ] }
-  ],
+  
   "centerIcons": [
     { "name": "Google", "url": "http://www.google.com.tr/", "icon": "img/google.jpg" },
     { "name": "Google Translate", "url": "http://translate.google.com.tr/", "icon": "img/ceviri.jpg" },
