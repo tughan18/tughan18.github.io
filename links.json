@@ -10,7 +10,7 @@
         { "name": "Haberturk", "url": "http://www.haberturk.com" },
         { "name": "Doğan Haber Ajansı", "url": "http://www.dha.com.tr" },
         { "name": "İhlas Haber Ajansı", "url": "http://www.iha.com.tr" },
-        { "name": "Anadolu Ajansı", "url": "http://www.aa.com.tr" },
+        { "name": "Anadolu Ajansı", "url": "http://www.aa.com.tr" }
       ]
     },
     {
@@ -42,7 +42,7 @@
         { "name": "Media Markt", "url": "http://www.mediamarkt.com.tr/" },
         { "name": "Gitti Gidiyor", "url": "http://www.gittigidiyor.com/" },
         { "name": "Migros", "url": "http://www.migroskop.com.tr/" },
-        { "name": "Money Club Kart", "url": "https://www.moneyclubkart.com/" },
+        { "name": "Money Club Kart", "url": "https://www.moneyclubkart.com/" }
        ]
     },
     {
