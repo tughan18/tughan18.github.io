@@ -8,9 +8,8 @@
     body {
       font-family: Arial, sans-serif;
       background-image: url('background_slate.gif');
-      background-size: auto;
-      background-position: center;
-      background-repeat: repeat;
+      background-size: cover;
+      background-repeat: no-repeat;
       background-attachment: fixed;
       margin: 0;
       padding: 0;
@@ -31,51 +30,47 @@
       padding: 5px;
       font-size: 14px;
     }
-
-    /* İkonlar için grid sistemi */
+    /* ICON GRID */
     .icons {
       display: grid;
-      grid-template-columns: repeat(5, 1fr); /* Masaüstü: 5 ikon */
-      gap: 20px; /* ~1 cm boşluk */
-      margin-top: 30px;
-      max-width: 80%; /* Haber Siteleri - Diğer Siteler hizası */
-      margin-left: auto;
-      margin-right: auto;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin: 30px auto 0 auto;
+      width: 80%;
+      max-width: 1000px;
+      justify-items: center;
     }
-    @media (max-width: 1024px) {
-      .icons {
-        grid-template-columns: repeat(4, 1fr); /* Tablet: 4 ikon */
-      }
-    }
-    @media (max-width: 768px) {
-      .icons {
-        grid-template-columns: repeat(4, 1fr); /* Telefon: 4 ikon */
-      }
-    }
-
-    /* İkon görünümü */
     .icons img {
       width: 70px;
       height: 50px;
       cursor: pointer;
-      border-radius: 8px;
+      border-radius: 5px;
+      transition: transform 0.2s;
       background: white;
-      padding: 5px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
+      padding: 3px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
     .icons img:hover {
       transform: scale(1.1);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-
-    /* Düzenleme linki */
     a.edit-link {
       display: block;
       margin-top: 20px;
       color: yellow;
       text-decoration: none;
       font-size: 18px;
+    }
+    /* Tablet ve telefon ayarları */
+    @media (max-width: 1024px) {
+      .icons {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .icons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
     }
   </style>
 </head>
