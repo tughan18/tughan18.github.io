@@ -32,29 +32,28 @@
       font-size: 14px;
     }
 
-    /* ICON GRID TASARIMI */
+    /* İkonlar için grid sistemi */
     .icons {
       display: grid;
       grid-template-columns: repeat(5, 1fr); /* Masaüstü: 5 ikon */
-      gap: 15px;
+      gap: 20px; /* ~1 cm boşluk */
       margin-top: 30px;
-      max-width: 500px;
+      max-width: 80%; /* Haber Siteleri - Diğer Siteler hizası */
       margin-left: auto;
       margin-right: auto;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       .icons {
-        grid-template-columns: repeat(3, 1fr); /* Tablet: 3 ikon */
-        max-width: 300px;
+        grid-template-columns: repeat(4, 1fr); /* Tablet: 4 ikon */
       }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       .icons {
-        grid-template-columns: repeat(2, 1fr); /* Telefon: 2 ikon */
-        max-width: 200px;
+        grid-template-columns: repeat(4, 1fr); /* Telefon: 4 ikon */
       }
     }
 
+    /* İkon görünümü */
     .icons img {
       width: 70px;
       height: 50px;
@@ -70,6 +69,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
+    /* Düzenleme linki */
     a.edit-link {
       display: block;
       margin-top: 20px;
