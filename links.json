@@ -11,7 +11,7 @@
         { "name": "Doğan Haber Ajansı", "url": "http://www.dha.com.tr" },
         { "name": "İhlas Haber Ajansı", "url": "http://www.iha.com.tr" },
         { "name": "Anadolu Ajansı", "url": "http://www.aa.com.tr" },
-              ]
+      ]
     },
     {
       "category": "ÇANKIRI SİTELERİ",
@@ -32,8 +32,8 @@
       "category": "ALIŞ VERİŞ SİTELERİ",
       "links": [
         { "name": "Cimri", "url": "http://www.cimri.com/" },
-         { "name": "Akakçe", "url": "https://www.akakce.com/" },
-         { "name": "Tarım Kredi", "url": "https://www.tkkoop.com.tr/" },
+        { "name": "Akakçe", "url": "https://www.akakce.com/" },
+        { "name": "Tarım Kredi", "url": "https://www.tkkoop.com.tr/" },
         { "name": "A101", "url": "http://www.a101.com.tr/" },
         { "name": "BİM", "url": "http://www.bim.com.tr/" },
         { "name": "Şok", "url": "http://www.sok.com.tr/" },
@@ -43,8 +43,7 @@
         { "name": "Gitti Gidiyor", "url": "http://www.gittigidiyor.com/" },
         { "name": "Migros", "url": "http://www.migroskop.com.tr/" },
         { "name": "Money Club Kart", "url": "https://www.moneyclubkart.com/" },
-        
-      ]
+       ]
     },
     {
       "category": "BANKALAR",
