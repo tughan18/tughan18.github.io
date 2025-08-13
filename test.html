@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bağlantı Testi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .status {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .info {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>📡 Bağlantı Test Sayfası</h1>
+  <p>Bu sayfa tarayıcının bağlantı durumunu test eder.</p>
+  <div class="status" id="status">Test ediliyor...</div>
+  <div class="info">
+    Sonucu bana iletirsen, "Supplied countryName is invalid" hatasının nedenini anlayabiliriz.
+  </div>
+
+  <script>
+    const statusDiv = document.getElementById("status");
+
+    function updateStatus(message, color = "white") {
+      statusDiv.style.color = color;
+      statusDiv.textContent = message;
+    }
+
+    // Bağlantı testi
+    fetch("https://api.github.com")
+      .then(res => {
+        if (res.ok) {
+          updateStatus("✅ Bağlantı başarılı! (API yanıt verdi)", "lightgreen");
+        } else {
+          updateStatus("⚠️ Bağlantı kuruldu ama yanıt hatalı: " + res.status, "yellow");
+        }
+      })
+      .catch(err => {
+        updateStatus("❌ Hata: " + err.message, "red");
+        console.error("Hata Detayı:", err);
+      });
+
+    // Ek bilgi: Cihaz ve tarayıcı bilgisi
+    console.log("User Agent:", navigator.userAgent);
+  </script>
+</body>
+</html>
