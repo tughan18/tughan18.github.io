@@ -48,7 +48,7 @@
         { "name": "Şok", "url": "http://www.sok.com.tr/" },
         { "name": "Bimeks", "url": "http://www.bimeks.com.tr/" },
         { "name": "Hepsi Burada", "url": "http://www.hepsiburada.com/" },
-        { "name": "Bitenekadar", "url": "http://www.Bitenekadar.com" },
+        { "name": "Bitenekadar", "url": "http://www.bitenekadar.com" },
         { "name": "Teknosa", "url": "http://www.teknosa.com/" },
         { "name": "Media Markt", "url": "http://www.mediamarkt.com.tr/" },
         { "name": "Hızlıal", "url": "http://www.hizlial.com/" },
@@ -90,10 +90,10 @@
         { "name": "Türk Telekom Online İşlemler", "url": "https://ett.turktelekom.com.tr/etmh/" },
         { "name": "Açık Öğretim Lisesi", "url": "http://www.aol.meb.gov.tr/" },
         { "name": "Açık Öğretim Fakültesi", "url": "http://aofburo.anadolu.edu.tr/" },
-        { "name": "Memurlar.net", "url": "http://www.Memurlar.net" }
+        { "name": "Memurlar.net", "url": "http://www.memurlar.net" }
       ]
     }
-  
+  ],
   "centerIcons": [
     { "name": "Google", "url": "http://www.google.com.tr/", "icon": "img/google.jpg" },
     { "name": "Google Translate", "url": "http://translate.google.com.tr/", "icon": "img/ceviri.jpg" },
