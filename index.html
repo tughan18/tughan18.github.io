@@ -8,8 +8,9 @@
     body {
       font-family: Arial, sans-serif;
       background-image: url('background_slate.gif');
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      background-repeat: repeat;
       background-attachment: fixed;
       margin: 0;
       padding: 0;
@@ -30,25 +31,45 @@
       padding: 5px;
       font-size: 14px;
     }
+
+    /* ICON GRID TASARIMI */
     .icons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Masaüstü: 5 ikon */
       gap: 15px;
       margin-top: 30px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
     }
+    @media (max-width: 768px) {
+      .icons {
+        grid-template-columns: repeat(3, 1fr); /* Tablet: 3 ikon */
+        max-width: 300px;
+      }
+    }
+    @media (max-width: 480px) {
+      .icons {
+        grid-template-columns: repeat(2, 1fr); /* Telefon: 2 ikon */
+        max-width: 200px;
+      }
+    }
+
     .icons img {
       width: 70px;
       height: 50px;
       cursor: pointer;
-      border-radius: 5px;
-      transition: transform 0.2s;
+      border-radius: 8px;
       background: white;
-      padding: 3px;
+      padding: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
     .icons img:hover {
       transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
     a.edit-link {
       display: block;
       margin-top: 20px;
@@ -75,13 +96,13 @@
         data.categories.forEach(cat => {
           const select = document.createElement('select');
           const defaultOption = document.createElement('option');
-          defaultOption.textContent = cat.category; // DÜZENLENDİ
+          defaultOption.textContent = cat.category;
           select.appendChild(defaultOption);
 
           cat.links.forEach(link => {
             const option = document.createElement('option');
             option.value = link.url;
-            option.textContent = link.name; // DÜZENLENDİ
+            option.textContent = link.name;
             select.appendChild(option);
           });
 
@@ -100,7 +121,7 @@
         iconsContainer.innerHTML = '';
         data.centerIcons.forEach(icon => {
           const img = document.createElement('img');
-          img.src = icon.icon; // DÜZENLENDİ
+          img.src = icon.icon;
           img.alt = icon.name;
           img.title = icon.name;
           img.addEventListener('click', () => {
