@@ -1,201 +1,125 @@
 {
-    "categories": [
-        {
-            "category": "HABER SİTELERİ",
-            "links": [
-                {
-                    "name": "Mynet",
-                    "url": "http://www.mynet.com"
-                },
-                {
-                    "name": "Milliyet",
-                    "url": "http://www.milliyet.com.tr"
-                },
-                {
-                    "name": "Hürriyet",
-                    "url": "http://www.hurriyet.com.tr"
-                },
-                {
-                    "name": "Sabah",
-                    "url": "http://www.sabah.com.tr"
-                },
-                {
-                    "name": "Haberturk",
-                    "url": "http://www.haberturk.com"
-                },
-                {
-                    "name": "Doğan Haber Ajansı",
-                    "url": "http://www.dha.com.tr"
-                },
-                {
-                    "name": "İhlas Haber Ajansı",
-                    "url": "http://www.iha.com.tr"
-                },
-                {
-                    "name": "Anadolu Ajansı",
-                    "url": "http://www.aa.com.tr"
-                },
-                {
-                    "name": "Cihan Haber Ajansı",
-                    "url": "http://www.cihan.com.tr"
-                },
-                {
-                    "name": "Yazete",
-                    "url": "http://www.yazete.com"
-                },
-                {
-                    "name": "Haberler",
-                    "url": "http://www.haberler.com"
-                },
-                {
-                    "name": "Haber7",
-                    "url": "http://www.haber7.com"
-                },
-                {
-                    "name": "Haber Vitrini",
-                    "url": "http://www.habervitrini.com"
-                },
-                {
-                    "name": "EnSon Haber",
-                    "url": "http://www.ensonhaber.com"
-                },
-                {
-                    "name": "İnternet Haber",
-                    "url": "http://www.internethaber.com"
-                }
-            ]
-        },
-        {
-            "category": "ÇANKIRI SİTELERİ",
-            "links": [
-                {
-                    "name": "Haber 18",
-                    "url": "http://www.haber18.com"
-                },
-                {
-                    "name": "Haberci 18",
-                    "url": "http://www.haberci18.com"
-                },
-                {
-                    "name": "Çankırı Bülteni",
-                    "url": "http://www.cankiribulteni.com"
-                },
-                {
-                    "name": "Çankırı Haber Sitesi",
-                    "url": "http://www.cankirihabersitesi.com"
-                },
-                {
-                    "name": "Bizim Çankırı",
-                    "url": "http://bizimcankiri.com.tr"
-                },
-                {
-                    "name": "Ekspres 18",
-                    "url": "http://www.ekspres18.com"
-                },
-                {
-                    "name": "Çankırı Yenigün",
-                    "url": "http://www.cankiriyenigun.com"
-                },
-                {
-                    "name": "Doğruyol Gazetesi",
-                    "url": "http://www.dogruyolgazetesi.com"
-                },
-                {
-                    "name": "Karatekin Gazetesi",
-                    "url": "http://www.karatekin.com.tr"
-                },
-                {
-                    "name": "Çankırı Postası",
-                    "url": "http://www.cankiripostasi.com"
-                },
-                {
-                    "name": "Posta 18",
-                    "url": "http://www.posta18.com"
-                },
-                {
-                    "name": "Çankırı TV",
-                    "url": "http://www.cankiri.tv"
-                },
-                {
-                    "name": "Medya Çankırı",
-                    "url": "http://medyacankiri.com"
-                },
-                {
-                    "name": "Çankırının Gündemi",
-                    "url": "http://www.cankiriningundemi.com"
-                },
-                {
-                    "name": "Sözcü 18",
-                    "url": "http://www.sozcu18.com"
-                }
-            ]
-        }
-    ],
-    "centerIcons": [
-        {
-            "name": "Google",
-            "url": "http://www.google.com.tr/",
-            "icon": "img/google.jpg"
-        },
-        {
-            "name": "Google Translate",
-            "url": "http://translate.google.com.tr/",
-            "icon": "img/ceviri.jpg"
-        },
-        {
-            "name": "Hotmail",
-            "url": "http://hotmail.com/",
-            "icon": "img/hotmail.jpg"
-        },
-        {
-            "name": "Facebook",
-            "url": "http://tr-tr.facebook.com/",
-            "icon": "img/facebook.jpg"
-        },
-        {
-            "name": "Gmail",
-            "url": "http://gmail.com/",
-            "icon": "img/gmail.jpg"
-        },
-        {
-            "name": "TTNET",
-            "url": "http://ttnet.com.tr/",
-            "icon": "img/ttnet.jpg"
-        },
-        {
-            "name": "ÖSYM",
-            "url": "http://www.osym.gov.tr/",
-            "icon": "img/osym.jpg"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/",
-            "icon": "img/twitter.jpg"
-        },
-        {
-            "name": "Vodafone",
-            "url": "http://www.vodafone.com.tr/",
-            "icon": "img/vodafone.jpg"
-        },
-        {
-            "name": "Avea",
-            "url": "http://avea.com.tr/",
-            "icon": "img/avea.jpg"
-        },
-        {
-            "name": "Turkcell",
-            "url": "http://turkcell.com.tr/",
-            "icon": "img/turkcell.jpg"
-        },
-        {
-            "name": "İzlesene",
-            "url": "http://www.izlesene.com/",
-            "icon": "img/izlesene.jpg"
-        },
-        {
-            "name": "YouTube",
-            "url": "http://youtube.com/",
-            "icon": "img/youtube.jpg"
-        }
-    ]
+  "categories": [
+    {
+      "category": "HABER SİTELERİ",
+      "links": [
+        { "name": "Mynet", "url": "http://www.mynet.com" },
+        { "name": "Milliyet", "url": "http://www.milliyet.com.tr" },
+        { "name": "Hürriyet", "url": "http://www.hurriyet.com.tr" },
+        { "name": "Sabah", "url": "http://www.sabah.com.tr" },
+        { "name": "Haberturk", "url": "http://www.haberturk.com" },
+        { "name": "Doğan Haber Ajansı", "url": "http://www.dha.com.tr" },
+        { "name": "İhlas Haber Ajansı", "url": "http://www.iha.com.tr" },
+        { "name": "Anadolu Ajansı", "url": "http://www.aa.com.tr" },
+        { "name": "Cihan Haber Ajansı", "url": "http://www.cihan.com.tr" },
+        { "name": "Yazete", "url": "http://www.yazete.com" },
+        { "name": "Haberler", "url": "http://www.haberler.com" },
+        { "name": "Haber7", "url": "http://www.haber7.com" },
+        { "name": "Haber Vitrini", "url": "http://www.habervitrini.com" },
+        { "name": "EnSon Haber", "url": "http://www.ensonhaber.com" },
+        { "name": "İnternet Haber", "url": "http://www.internethaber.com" }
+      ]
+    },
+    {
+      "category": "ÇANKIRI SİTELERİ",
+      "links": [
+        { "name": "Haber 18", "url": "http://www.haber18.com" },
+        { "name": "Haberci 18", "url": "http://www.haberci18.com" },
+        { "name": "Çankırı Bülteni", "url": "http://www.cankiribulteni.com" },
+        { "name": "Çankırı Haber Sitesi", "url": "http://www.cankirihabersitesi.com" },
+        { "name": "Bizim Çankırı", "url": "http://bizimcankiri.com.tr" },
+        { "name": "Ekspres 18", "url": "http://www.ekspres18.com" },
+        { "name": "Çankırı Yenigün", "url": "http://www.cankiriyenigun.com" },
+        { "name": "Doğruyol Gazetesi", "url": "http://www.dogruyolgazetesi.com" },
+        { "name": "Karatekin Gazetesi", "url": "http://www.karatekin.com.tr" },
+        { "name": "Çankırı Postası", "url": "http://www.cankiripostasi.com" },
+        { "name": "Posta 18", "url": "http://www.posta18.com" },
+        { "name": "Çankırı TV", "url": "http://www.cankiri.tv" },
+        { "name": "Medya Çankırı", "url": "http://medyacankiri.com" },
+        { "name": "Çankırının Gündemi", "url": "http://www.cankiriningundemi.com" },
+        { "name": "Sözcü 18", "url": "http://www.sozcu18.com" }
+      ]
+    },
+    {
+      "category": "ALIŞ VERİŞ SİTELERİ",
+      "links": [
+        { "name": "A101", "url": "http://www.a101.com.tr/" },
+        { "name": "BİM", "url": "http://www.bim.com.tr/" },
+        { "name": "Şok", "url": "http://www.sok.com.tr/" },
+        { "name": "Bimeks", "url": "http://www.bimeks.com.tr/" },
+        { "name": "Hepsi Burada", "url": "http://www.hepsiburada.com/" },
+        { "name": "Bitenekadar", "url": "http://www.Bitenekadar.com" },
+        { "name": "Teknosa", "url": "http://www.teknosa.com/" },
+        { "name": "Media Markt", "url": "http://www.mediamarkt.com.tr/" },
+        { "name": "Hızlıal", "url": "http://www.hizlial.com/" },
+        { "name": "Gitti Gidiyor", "url": "http://www.gittigidiyor.com/" },
+        { "name": "Sanal Pazar", "url": "http://www.sanalpazar.com/" },
+        { "name": "Cimri", "url": "http://www.cimri.com/" },
+        { "name": "Migros", "url": "http://www.migroskop.com.tr/" },
+        { "name": "Money Club Kart", "url": "https://www.moneyclubkart.com/" },
+        { "name": "Tozlu", "url": "http://www.tozlu.com/tr/" },
+        { "name": "Morhipo", "url": "http://www.morhipo.com/" },
+        { "name": "Markafoni", "url": "https://www.markafoni.com/" },
+        { "name": "KidyCity", "url": "http://www.kidycity.com/tr-TR/" },
+        { "name": "Trendyol", "url": "http://www.trendyol.com/" },
+        { "name": "LCWaikiki", "url": "http://www.lcwaikiki.com/" },
+        { "name": "Tekzen", "url": "https://www.tekzen.com.tr/" },
+        { "name": "Evmanya", "url": "http://www.evmanya.com/" }
+      ]
+    },
+    {
+      "category": "BANKALAR",
+      "links": [
+        { "name": "Denizbank", "url": "http://www.denizbank.com/" },
+        { "name": "Finansbank", "url": "http://www.finansbank.com.tr/" },
+        { "name": "İş Bankası", "url": "http://www.isbank.com.tr/" },
+        { "name": "Vakıfbank", "url": "https://www.vakifbank.com.tr/" },
+        { "name": "Ziraat Bankası", "url": "https://www.ziraatbank.com.tr/" },
+        { "name": "Halk Bankası", "url": "https://www.halkbank.com.tr/" }
+      ]
+    },
+    {
+      "category": "DİĞER SİTELER",
+      "links": [
+        { "name": "Bobiler", "url": "https://www.bobiler.org/" },
+        { "name": "Canlı Tv Seyret", "url": "http://www.ecanlitvizle.com/" },
+        { "name": "Son Depremler", "url": "http://www.koeri.boun.edu.tr/scripts/lst2.asp" },
+        { "name": "Sahibinden", "url": "http://www.sahibinden.com/" },
+        { "name": "TTNET Hız Testi", "url": "http://hiztesti.ttnet.com.tr/" },
+        { "name": "Chip", "url": "http://www.chip.com.tr/" },
+        { "name": "Türk Telekom Online İşlemler", "url": "https://ett.turktelekom.com.tr/etmh/" },
+        { "name": "Açık Öğretim Lisesi", "url": "http://www.aol.meb.gov.tr/" },
+        { "name": "Açık Öğretim Fakültesi", "url": "http://aofburo.anadolu.edu.tr/" },
+        { "name": "Memurlar.net", "url": "http://www.Memurlar.net" }
+      ]
+    }
+  ],
+ "categories": [
+    { "category": "HABER SİTELERİ", "links": [ /* ... */ ] },
+    { "category": "ÇANKIRI SİTELERİ", "links": [ /* ... */ ] },
+    { "category": "ALIŞ VERİŞ SİTELERİ", "links": [ /* ... */ ] },
+    { "category": "BANKALAR", "links": [ /* ... */ ] },
+    { "category": "DİĞER SİTELER", "links": [ /* ... */ ] }
+  ],
+  "centerIcons": [
+    { "name": "Google", "url": "http://www.google.com.tr/", "icon": "img/google.jpg" },
+    { "name": "Google Translate", "url": "http://translate.google.com.tr/", "icon": "img/ceviri.jpg" },
+    { "name": "Hotmail", "url": "http://hotmail.com/", "icon": "img/hotmail.jpg" },
+    { "name": "Facebook", "url": "http://tr-tr.facebook.com/", "icon": "img/facebook.jpg" },
+    { "name": "Gmail", "url": "http://gmail.com/", "icon": "img/gmail.jpg" },
+    { "name": "TTNET", "url": "http://ttnet.com.tr/", "icon": "img/ttnet.jpg" },
+    { "name": "ÖSYM", "url": "http://www.osym.gov.tr/", "icon": "img/osym.jpg" },
+    { "name": "Twitter", "url": "https://twitter.com/", "icon": "img/twitter.jpg" },
+    { "name": "Vodafone", "url": "http://www.vodafone.com.tr/", "icon": "img/vodafone.jpg" },
+    { "name": "Avea", "url": "http://avea.com.tr/", "icon": "img/avea.jpg" },
+    { "name": "Turkcell", "url": "http://turkcell.com.tr/", "icon": "img/turkcell.jpg" },
+    { "name": "İzlesene", "url": "http://www.izlesene.com/", "icon": "img/izlesene.jpg" },
+    { "name": "YouTube", "url": "http://youtube.com/", "icon": "img/youtube.jpg" },
+    { "name": "WhatsApp", "url": "https://web.whatsapp.com/", "icon": "img/whatsapp.jpg" },
+    { "name": "Instagram", "url": "https://www.instagram.com/", "icon": "img/instagram.jpg" },
+    { "name": "e-Devlet", "url": "https://www.turkiye.gov.tr/", "icon": "img/edevlet.jpg" },
+    { "name": "EBA", "url": "https://www.eba.gov.tr/", "icon": "img/eba.jpg" },
+    { "name": "e-Nabız", "url": "https://enabiz.gov.tr/", "icon": "img/enabiz.jpg" },
+    { "name": "MHRS", "url": "https://mhrs.gov.tr/vatandas", "icon": "img/mhrs.jpg" }
+  ]
 }
